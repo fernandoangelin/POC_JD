@@ -17,36 +17,36 @@ Also, it contains the following files:
 As example, the following tests were automated:
 - **Test 1** *(homepage.robot)*
 ```gherkin
-    Given the shop user loads the shops main page
-    Then the cookies modal must be loaded
-    When the shop user clicks in the accept cookies button
-    Then the cookies modal must not be visible
+    Given the user loads the shop's main page
+    Then the cookies modal should be visible
+    When the user clicks on the "Accept Cookies" button on the cookies modal
+    Then the cookies modal should not be visible
 ```
 
 - **Test 2** *(brandpage.robot)*
 ```gherkin
-    Given the shop user loads the shops main page
-    And the shop user clicks in the accept cookies button
-    When the shop user types a search term
-    And the shop user clicks in the search button
+    Given the user loads the shop's main page
+    And the user clicks on the "Accept Cookies" button
+    When the user types a search term
+    And the user clicks on the "Search" button
     Then the brand page should be visible
 ```
 
 - **Test 3** *(producpage.robot)*
 ```gherkin
-    Given the shop user loads the shops main page
-    And the shop user clicks in the accept cookies button
-    When the shop user goes to the brand page
-    And the shop user selects a product
+    Given the user loads the shop's main page
+    And the user clicks on the "Accept Cookies" button
+    When the user navigates to the brand page
+    And the user selects a product
     Then the product page should be visible
 ```
 
 - **Test 4** *(cartpage.robot)*
 ```gherkin
-    Given the shop user loads the shops main page
-    And the shop user clicks in the accept cookies button
-    When the shop user goes to the product page
-    And the shop user clicks in the add to cart button
+    Given the user loads the shop's main page
+    And the user clicks on the "Accept Cookies" button
+    When the user navigates to the product page
+    And the user clicks on the "Add to Cart" button
     Then the cart page should be loaded with the selected product
 ```
 
