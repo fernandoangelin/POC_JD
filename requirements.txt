@@ -1,0 +1,9 @@
+Appium-Python-Client==3.2.1
+robotframework==7.0.1
+robotframework-appiumlibrary==2.0.0
+robotframework-pabot==2.18.0
+robotframework-robocop==5.3.0
+robotframework-seleniumlibrary==6.3.0
+selenium==4.20.0
+setuptools==73.0.1
+webdriver-manager==4.0.2
